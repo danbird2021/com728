@@ -1,5 +1,5 @@
 
-# Beep thgit e Robot with user input
+# Beep the Robot with user input
 print("Please enter a character for the eye:")
 eye = input()
 
@@ -20,3 +20,4 @@ print("\t\t\t\t\t\t\t\t\t\t\t    #")
 print("\t\t\t\t\t\t\t\t\t\t\t   #  #")
 print("\t\t\t\t\t\t\t\t\t\t\t  #    #")
 print("\t\t\t\t\t\t\t\t\t\t\t #      #")
+
