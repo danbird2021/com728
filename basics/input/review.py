@@ -36,7 +36,7 @@ print("Number of spaces (max 80):")
 # store users answer in variable 'spaces' and convert variable from a string to an integer
 spaces = int(input())
 
-# if user enters more than 80 for spaces to the right then spaces equals 80 to keeo ascii robot on visible screen
+# if user enters more than 80 for spaces to the right then spaces equals 80 to keep ascii robot on visible screen
 if spaces > 80:
     spaces = 80
 
@@ -63,9 +63,13 @@ print(f"""\n
  """)
 
 # ask user for bow tie character
-print("Bow tie character:")
+print("Bow tie character (max 1):")
 # store user's answer in bow_tie_char variable
 bow_tie_char = input()
+
+# if user enters more than one character then only use first character of bow_tie_char string for bow tie on ascii robot
+if len(bow_tie_char) > 1:
+    bow_tie_char = (bow_tie_char[0])
 
 # display ascii robot with new bow tie character being used for bow tie
 print(f"""\n
