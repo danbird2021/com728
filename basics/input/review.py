@@ -67,9 +67,6 @@ print("Bow tie character (max 1):")
 # store user's answer in bow_tie_char variable
 bow_tie_char = input()
 
-# if user enters more than one character then only use first character of bow_tie_char string for bow tie on ascii robot
-if len(bow_tie_char) > 1:
-    bow_tie_char = (bow_tie_char[0])
 
 # display ascii robot with new bow tie character being used for bow tie
 print(f"""\n
@@ -79,7 +76,7 @@ print(f"""\n
 {spaces * ' '}   #    #   #  / |                              |
 {spaces * ' '}   #  \__/  #_/   -------------------------------
 {spaces * ' '}   ##########
-{spaces * ' '}      {bow_tie_char * 3}     
+{spaces * ' '}      {bow_tie_char[0] * 3}     
 {spaces * ' '}       #    
 {spaces * ' '}###############
 {spaces * ' '}       #
