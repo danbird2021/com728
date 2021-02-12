@@ -84,38 +84,28 @@ if type == "film" or type == "tv series":
     elif genre == "thriller":
         print("\nOh dear - I'm scared of thrillers, maybe I'll read a book. Can you recommend a good book to read?")
         name = input()
-
-        # Retrieve the length in minutes of recommended programme
-        print(f"\nHow long is {name} to watch (minutes)?")
-        time = int(input())
-
-        # Determine length of programme and display correct response
-        if time < 150 and not time <= 0:
-            print(f"\nGreat, I've got enough time to watch the {type} {name} - now how do you turn on the TV?!")
-        elif time >= 150:
-            print(f"\nWoah! I haven't got enough time for that {type}, I'm sleepy now maybe I'll go for a Zzzzz.")
-        else:
-            print(f"\nSorry I didn't recognise {time} as minutes, oh my brain hurts now and I... Zzzzzz")
+        print(f"\n{name} sounds a great book to read, thank you")
 
      # Determine genre type and display question to retrieve a recommendation from user
     elif genre == "sci-fi":
-        print(f"\nNow you're talking, sci-fi is my kind of {type} , which do you recommend?")
-        name = input()
+      print(f"\nNow you're talking, sci-fi is my kind of {type} , which do you recommend?")
+      name = input()
 
         # Retrieve the length in minutes of recommended programme
-        print(f"\nHow long is {name} to watch (minutes)?")
-        time = int(input())
+      print(f"\nHow long is {name} to watch (minutes)?")
+      time = int(input())
 
         # Determine length of programme and display correct response
-        if time < 150 and not time <= 0:
+      if time < 150 and not time <= 0:
             print(f"\nGreat, I've got enough time to watch the {type} {name} - now how do you turn on the TV?!")
-        elif time >= 150:
+      elif time >= 150:
             print(f"\nWoah! I haven't got enough time for that {type}, I'm sleepy now maybe I'll go for a Zzzzz.")
-        else:
+      else:
             print(f"\nSorry I didn't recognise {time} as minutes, oh my brain hurts now and I... Zzzzzz")
-    else:print("\nOh dear I don't recognise that genre, maybe I'll read a book. Can you recommend a good book to read?")
-    name = input()
-
+    else:
+        print("\nOh dear I don't recognise that genre, maybe I'll read a book. Can you recommend a good book to read?")
+        name = input()
+        print(f"\n{name} sounds a great book to read, thank you")
 elif type == "both":
     print("\nSorry I only have time to watch one of them")
 
