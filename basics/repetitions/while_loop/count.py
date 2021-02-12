@@ -4,7 +4,7 @@
 print("How many live cables must I avoid?")
 live_cables = int(input())
 
-# Declare variable to count cables removed.
+# Declare variable to count cables avoided.
 cables_avoided = 0
 
 # Blank line
