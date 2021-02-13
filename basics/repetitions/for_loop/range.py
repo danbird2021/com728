@@ -16,8 +16,8 @@ while brightness_level % 2 != 0:
 print("\nAdjusting brightness...\n")
 
 # Display Beep and Bop's brightness levels in increments of 2 using
-# for loop - count in range start at 2, then stop at brightness level + 2, step by 2 for each interation of loop
-for count in range(2,brightness_level+2,2):
+# for loop - count in range start at 2, then stop at brightness level + 1, step by 2 for each interation of loop
+for count in range(2,brightness_level+1,2):
     print(f"Beep's brightness level: {'*'* count}")
     print(f"Bop's brightness level: {'*'* count}\n")
 
