@@ -1,6 +1,6 @@
 # A program to demonstrate the use of user-defined functions with multiple parameters
 
-def climb_ladder(steps_remaining,steps_crossed):
+def climb_ladder(steps_remaining, steps_crossed):
     """
     Retrieve amount of steps remaining and amount of steps crossed,
     and determine if amount of steps remaining is greater than steps crossed.
