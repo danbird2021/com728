@@ -11,7 +11,9 @@ def play_guess_the_number():
     print("Please enter a maximum value:")
     max_num = int(input())
 
-    random_num =  rnd.randrange(min_num, max_num, 1)
+    random_num =  rnd.randrange(min_num + 1, max_num)
+# Debugging code
+#print(random_num)
     print(f"I am thinking of a number between {min_num} and {max_num}. Can you guess what it is?")
 
     guessing = True
