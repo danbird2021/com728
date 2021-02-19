@@ -1,4 +1,4 @@
-# A program that determines the ASCII code for a character using the built in function ord().
+# A program that determines the ASCII code for a character using the built in functions ord and len.
 
 # Display start message
 print("Program Started!")
