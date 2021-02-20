@@ -29,4 +29,3 @@ def run():
         print(f"The average of Beep and Bop's weight is: {avg:.0f}.")
 
 
-run()

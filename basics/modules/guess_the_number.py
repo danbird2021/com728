@@ -28,9 +28,9 @@ def play_guess_the_number():
             print("Try again:")
         elif guess == random_num:
             print("Congratulations! You guessed my number!")
-            guessing == False
+            guessing = False
         else:
             print("Try again:")
 
-
-play_guess_the_number()
+def run():
+    play_guess_the_number()

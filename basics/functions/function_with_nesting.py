@@ -12,5 +12,6 @@ def identify():
     else:
         print("We will be fine.")
 
-# Call listen function.
-identify()
+def run():
+    # Call listen function.
+    identify()

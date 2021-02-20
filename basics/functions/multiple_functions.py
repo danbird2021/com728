@@ -17,5 +17,5 @@ def create_ladder():
     steps = int(input())
 
     display_ladder(steps)
-
-create_ladder()
+def run():
+    create_ladder()

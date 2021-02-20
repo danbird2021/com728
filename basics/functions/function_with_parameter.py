@@ -12,7 +12,8 @@ def escape_by(plan):
     else:
         print("We cannot escape that way! The boulder is in the way!")
 
-# Call escape_by function with different values.
-escape_by("jumping over")
-escape_by("running around")
-escape_by("going deeper")
+def run():
+    # Call escape_by function with different values.
+    escape_by("jumping over")
+    escape_by("running around")
+    escape_by("going deeper")

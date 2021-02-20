@@ -6,6 +6,6 @@ def listen():
     sound = input()
     print(f"That was a loud {sound}!")
 
-
-# Call Listen function
-listen()
+def run():
+    # Call Listen function
+    listen()

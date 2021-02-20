@@ -11,6 +11,6 @@ def climb_ladder(steps_remaining, steps_crossed):
     else:
         print("We are almost there!")
 
-
-climb_ladder(5, 2)
-climb_ladder(2, 5)
+def run():
+    climb_ladder(5, 2)
+    climb_ladder(2, 5)

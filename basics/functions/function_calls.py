@@ -65,7 +65,3 @@ def run():
         display_repeat(word)
     else:
         print("Sorry, you needed to enter a number between 1 and 5!")
-
-
-
-run()
