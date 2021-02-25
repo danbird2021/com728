@@ -9,7 +9,7 @@ def run():
     # Display starting message.
     print("\nDisplaying...")
 
-    # Display mountains required - count in range (start at 0, end at num_mountains -1, step 1 on each loop).
+    # Display mountains required - count in range (start at 0, end at num_mountains, step 1 on each loop).
     for count in range(0, num_mountains, 1):
         print("""
                __
