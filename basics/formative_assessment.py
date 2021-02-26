@@ -5,8 +5,6 @@ def myth():
     print("You must find Maui and lift the curse!")
 
 
-
-
 def explore(site):
     if site == "The Cavern":
         print("You have found a camakau! You can sail the seas with this.")
