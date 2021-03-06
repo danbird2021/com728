@@ -59,6 +59,22 @@ def display_passengers_per_gender():
 
     print(f"females: {females}, males: {males}")
 
+def display_passengers_per_age_group():
+
+    children = 0
+    adults = 0
+    elderly = 0
+
+    for record in records:
+        if record[5] != "":
+            age = int(float(record[5]))
+            if age < 18:
+                children += 1
+            elif age < 65:
+                adults += 1
+            else:
+                elderly += 1
+    print(f"children: {children}, adults: {adults}, elderly: {elderly}")
 
 
 def run():
@@ -73,10 +89,12 @@ def run():
         display_num_survivors()
     elif selected_option == 3:
         display_passengers_per_gender()
+    elif selected_option == 4:
+        display_passengers_per_age_group()
     else:
         print("Error! Option not recognised!")
-    #print(headings)1
-    #print(records)
+#    print(headings)
+#    print(records)
 # Determine if main file being executed.
 if __name__ == "__main__":
     run()
