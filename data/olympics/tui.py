@@ -3,10 +3,10 @@
 
 def started(msg=""):
     print('-' * 85)
-    print(f"Operations started: {msg}...\n")
+    print(f"Operations started: Reading data from {msg}...\n")
 
 def completed():
-    print("Operation completed.")
+    print("\nOperation completed.")
     print('-' * 85)
 
 def error(msg):
@@ -21,7 +21,6 @@ def menu():
     return input("\nYour selection:")
 
 def display_medal_tally(tally):
-
     print(f"| {'Gold':<10} | {tally['Gold']:<10}|")
     print(f"| {'Silver':<10} | {tally['Silver']:<10}|")
     print(f"| {'Bronze':<10} | {tally['Bronze']:<10}|")
@@ -30,13 +29,7 @@ def display_team_medal_tally(team_tally):
 
     for countries, medals in team_tally.items():
         print(f"{countries}")
-        for medal, count in medals.items():
-            if medal == "Gold":
-                print(f"{medal:>10}:{count}, ", end="")
-            elif medal == "Bronze":
-                print(f"{medal}:{count}")
-            else:
-                print(f"{medal}:{count}, ", end="")
+        print(f"\tGold:{medals['Gold']}, Silver:{medals['Silver']}, Bronze:{medals['Bronze']}")
 
 def display_years(years):
 
