@@ -5,7 +5,7 @@ def retrieve_bot():
     cursor = db.cursor()
     cursor.execute("SELECT * FROM bots")
     single_row = cursor.fetchone()
-    db.close
+    db.close()
     print(single_row)
 
 def run():
