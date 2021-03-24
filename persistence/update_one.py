@@ -8,12 +8,10 @@ def get_bot_id_from_user():
 def display_bot_from_db(bot_id):
     db = sqlite3.connect("bots.db")
     cursor = db.cursor()
-
     sql = f"SELECT * FROM bots WHERE id = {bot_id}"
     cursor.execute(sql)
-
     single_row = cursor.fetchone()
-    db.close
+    db.close()
     print(f"Current bot details are as follows: \n"
           f"id: {single_row[0]}, name: {single_row[1]}, max_speed: {single_row[2]}, max_strength: {single_row[3]}"
           f", date_created: {single_row[4]}, manufacturer: {single_row[5]}, home_planet_id: {single_row[6]}, film_franchise_id: {single_row[7]}")
