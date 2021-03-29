@@ -21,11 +21,19 @@ def display_product_supplier():
     db = sqlite3.connect("catalogue.db")
     cursor = db.cursor()
     cursor.execute("SELECT product.name, supplier.name  FROM product INNER JOIN supplier ON product.supplier_id = supplier.id")
+
     all_rows = cursor.fetchall()
     db.close()
 
     for row in all_rows:
         print(f"Product: {row[0]}, Supplier: {row[1]}")
         
-    
-
+def display_product_supplier_locations():
+    db = sqlite3.connect("catalogue.db")
+    cursor = db.cursor()
+    cursor.execute("SELECT product.name, supplier.name, location.city, location.country FROM product INNER JOIN supplier ON product.supplier_id = supplier.id INNER JOIN location ON supplier.location_id = location.id")
+    all_rows = cursor.fetchall()
+    db.close()
+    print("\nThe suppliers for each product are as follows:\n")
+    for row in all_rows:
+        print(f"Product: {row[0]}, Supplier: {row[1]}, Supplier Location: {row[2]}, {row[3]}")
