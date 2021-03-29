@@ -51,3 +51,14 @@ def display_products_missing_suppliers():
             print(f"None")
         else:
             print(f"{row[1]}, Supplier Location: {row[2]}, {row[3]}")
+
+def display_suppliers_missing_products():
+    db = sqlite3.connect("catalogue.db")
+    cursor = db.cursor()
+    cursor.execute("SELECT supplier.name,  product.name FROM supplier LEFT OUTER JOIN product ON supplier.id = product.supplier_id")
+
+    all_rows = cursor.fetchall()
+    db.close()
+
+    for row in all_rows:
+        print(f"Supplier: {row[0]}, Product: {row[1]}")
