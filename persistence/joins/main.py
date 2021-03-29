@@ -5,7 +5,8 @@ def menu():
     
 [1] Display stock levels
 [2] Display suppliers
-[3] Display supplier locations\n""")
+[3] Display supplier locations
+[4] Display missing suppliers \n""")
 
     response = int(input("Your selection:"))
 
@@ -21,6 +22,8 @@ def run():
         database.display_product_supplier()
     elif menu_choice == 3:
         database.display_product_supplier_locations()
+    elif menu_choice == 4:
+        database.display_products_missing_suppliers()
 
 
 
